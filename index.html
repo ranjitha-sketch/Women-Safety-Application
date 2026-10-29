@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHer - Women Safety App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>🌸 SafeHer</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#tools">Safety Tools</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">YOUR SAFETY, YOUR CONTROL</p>
+        <h1>Feel Safer.<br><span>Wherever You Go.</span></h1>
+        <p>Stay connected with trusted people and access safety tools whenever needed.</p>
+
+        <button class="sos-button" onclick="showSOS()">
+            🆘 SOS EMERGENCY
+        </button>
+
+        <button class="location-button" onclick="shareLocation()">
+            📍 Share My Location
+        </button>
+    </div>
+
+    <div class="hero-image">🛡️</div>
+</section>
+
+<section class="section" id="contacts">
+    <h2>Trusted Contacts</h2>
+    <p>Add people you trust for quick access.</p>
+
+    <div class="contact-form">
+        <input type="text" id="contactName" placeholder="Contact name">
+        <input type="tel" id="contactPhone" placeholder="Phone number">
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <div id="contactList" class="contact-list"></div>
+</section>
+
+<section class="section" id="tools">
+    <h2>Safety Tools</h2>
+
+    <div class="tools">
+        <div class="tool-card">
+            <h3>📍 Live Location</h3>
+            <p>Get your current location and create a map link.</p>
+            <button onclick="shareLocation()">Get Location</button>
+        </div>
+
+        <div class="tool-card">
+            <h3>📞 Fake Call</h3>
+            <p>Display a simulated incoming call screen.</p>
+            <button onclick="fakeCall()">Start Fake Call</button>
+        </div>
+
+        <div class="tool-card">
+            <h3>⏰ Safety Check-in</h3>
+            <p>Set a reminder to check in with someone.</p>
+            <button onclick="startCheckIn()">Start 1-Minute Check-in</button>
+            <p id="timerStatus">No active check-in.</p>
+        </div>
+    </div>
+</section>
+
+<section class="emergency">
+    <h2>Need Urgent Help?</h2>
+    <p>In India, call 112 for emergency assistance.</p>
+    <a href="tel:112" class="call-button">📞 Call 112</a>
+</section>
+
+<footer>
+    <p>© 2026 SafeHer | Your Safety Matters 💗</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
